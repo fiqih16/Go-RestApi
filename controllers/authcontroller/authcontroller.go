@@ -1,13 +1,15 @@
 package authcontroller
 
-func Login() {
+import "net/http"
+
+func Login(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func Register() {
+func Register(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func Logout() {
+func Logout(w http.ResponseWriter, r *http.Request) {
 
 }
