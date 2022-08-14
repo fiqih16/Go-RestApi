@@ -1,6 +1,8 @@
 package models
 
 import (
+	"fmt"
+
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -15,4 +17,5 @@ func ConnectDatabase() {
 	
 	db.AutoMigrate(&User{})
 	DB = db
+	fmt.Println("Database connected")
 }
